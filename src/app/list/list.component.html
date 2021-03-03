@@ -1,0 +1,7 @@
+<ul class="list-group">
+    <li *ngFor="let item of items" class="list-group-item">
+        {{item}}<button (click)="deleted(item)">X</button>
+    </li>
+</ul>
+<br/><br/>
+<input (keyup.enter)="OnInput($event)">
